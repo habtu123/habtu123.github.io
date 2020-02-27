@@ -18,6 +18,7 @@ header h1{
     font-weight: bold;
     font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
     text-shadow: 3px 3px #999999;
+    padding: 20px;
 }
 
 .content{
@@ -29,11 +30,13 @@ header h1{
     float: right; 
     width:250px;    
     font-family: Arial, sans-serif;
-    background-color: #A2B964;
+ 
 }
-.definitions{    
+.definitions{  
+    float: left;  
     margin-top: 0px;
     padding: 10px;
+    background-color:#A2B964 ;
 }
 .reviews{
     width: 550px;
@@ -49,7 +52,9 @@ header h1{
     
 }
 .movie-poster img{
+    float: left;
     border-top-right-radius: 20px;
+    margin-bottom: 0px;
 }
 .reviews-top .txt{
     color: red;
@@ -64,9 +69,9 @@ header h1{
     float: left;
     width: 45%;
     margin: 2%;
-    
 }
 .review{  
+    float: left;
     width: 100%;
     font-size: 8pt;
     font-weight: bold;
@@ -86,6 +91,18 @@ header h1{
     float: left;
     width: 100%;
 }
-footer{
+/* footer{
     background-color: #A2B964;
+} */
+dt {
+    font-weight: bold;
+    padding-: 10pt;
+  }
+  dd {
+    margin: 0;
+    /* padding: 0 2em 0.5em 0; */
+    padding-left: 2em;
+  }
+.border{
+    border: solid 1px;
 }
