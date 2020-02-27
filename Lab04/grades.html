@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Retrieve Grade</title>
+        <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    </head>
+<body>
+    <h1>Retrieve your grade</h1>
+    <table>
+    <form name="grade" action="http://mumstudents.org/params.php" method="POST">
+       <tr>
+            <td>Name:</td>
+            <td> <input type="text" name="name" /></td> 
+        </tr> 
+        <tr>
+            <td>Student Id: </td>
+            <td><input type="text" name="id"></td>
+        </tr>
+        <tr>
+            <td>Select Assignment:</td>
+            <td>
+        <select> 
+           <option>Assigment 1</option>
+           <option>Assigment 2</option>
+           <option>Assigment 3</option>
+           <option>Assigment 4</option>
+        </select>
+        </td>
+        </tr>
+        <tr>
+            <td>Select Entry:</td>
+            <td>
+            <label>February<input type="radio" name="entry" value="February"></label>
+            <label>May<input type="radio" name="entry" value="May"></label>
+            <label>August<input type="radio" name="entry" value="August"></label>
+            <label>Novemember<input type="radio" name="entry" value="Novemember"></label>
+        </td>
+     </tr>
+     <tr>
+         <td>
+         <label>I confirm that I am only looking for my grade <input type="checkbox" name="confirm"></label>
+        </td>
+     </tr>
+     <tr>
+         <td></td>
+         <td><input type="submit" value="Get Grade!"></td>
+     </tr>
+    </form>
+</table>
+    </body>
+</html>
