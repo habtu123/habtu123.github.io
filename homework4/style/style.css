@@ -1,0 +1,22 @@
+form label{
+    margin: 10pt;
+}
+input[type="submit"]{
+    background-color:	#FFA2A5;
+    font-weight: bold;
+}
+fieldset{
+    background-color: #E0E1FF;    
+    box-shadow: 4px 4px black;
+    border-radius: 12px;
+    width: 40%;
+
+}
+fieldset legend{
+    border: solid 2px gray;
+    background-color: white;
+}
+a{
+    color: red;
+    text-decoration: none;
+}

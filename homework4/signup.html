@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Signup Page</title>
+        <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    </head>
+<body>
+    
+    <fieldset>
+        <legend>New User Signup:</legend>
+        <table>
+        <form name="grade" action="http://mumstudents.org/signup.php">
+        
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="name"  size="16"/></td> 
+                </tr> 
+                <tr>
+                    <td>Gender</td> 
+                    <td>
+                    <label>Male<input type="radio" name="sex" value="male"></label>
+                    <label>Female<input type="radio" name="sex" value="Female"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td> <input type="number" name="age"  size="6"/></td> 
+                </tr>
+                <tr>
+                    <td>Personlity Type:</td>
+                    <td> <input type="text" name="name" /> <a target="_blank" href="http://www.humanmetrics.com/personality">(Don't Know your Personlity type?)</a></td> 
+                </tr>
+                <tr>
+                    <td>Favorite OS:</td>
+                    <td>
+                        <select> 
+                        <option>Mac OS</option>
+                        <option>Windows</option>
+                        <option>Linux</option>
+                        </select>
+                </td>
+                </tr>
+                <tr>
+                    <td>Select Entry:</td>
+                    <td>
+                    <label>February<input type="radio" name="entry" value="February"></label>
+                    <label>May<input type="radio" name="entry" value="May"></label>
+                    <label>August<input type="radio" name="entry" value="August"></label>
+                    <label>Novemember<input type="radio" name="entry" value="Novemember"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+            Seeking age:
+                </td>
+                <td>
+                    <input type="number" name="min" placeholder="MIN" size="6" max="99" /> to  <input type="number" name="max" placeholder="MAX" size="6" />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Sign up"></td>
+            </tr>
+        </form>
+    </table>
+</fieldset>
+    </body>
+</html>
