@@ -1,0 +1,91 @@
+*{
+    margin: 0px auto;
+}
+body{
+    background-image: url("../images/background.png");
+}
+nav{
+    background-image: url('./images/bannerbg.png');
+    background-repeat:repeat-x; 
+    text-align: center;
+}
+header{
+    text-align: center;
+}
+
+header h1{
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+    text-shadow: 3px 3px #999999;
+}
+
+.content{
+    width: 800px; 
+    border: solid 4px gray;
+    border-radius: 20px;
+}
+.tmnt-right{
+    float: right; 
+    width:250px;    
+    font-family: Arial, sans-serif;
+    background-color: #A2B964;
+}
+.definitions{    
+    margin-top: 0px;
+    padding: 10px;
+}
+.reviews{
+    width: 550px;
+    float: right;
+}
+
+.reviews-top{
+    background-image: url(../images/rbg.png);
+    background-repeat: repeat-x;
+    border-top-left-radius: 20px;
+    
+    height: 83px;
+    
+}
+.movie-poster img{
+    border-top-right-radius: 20px;
+}
+.reviews-top .txt{
+    color: red;
+    font-size: 48pt;
+    font-weight: bold;
+   
+}
+.reviews-top img{
+    border-top-left-radius: 20px;  vertical-align: top;
+}
+.review-wrapper{
+    float: left;
+    width: 45%;
+    margin: 2%;
+    
+}
+.review{  
+    width: 100%;
+    font-size: 8pt;
+    font-weight: bold;
+    background-color:#E8DC9B ;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding:5px ;
+    overflow: hidden;
+
+}
+
+.review img{
+    float: left;
+}
+
+.reviwer{
+    float: left;
+    width: 100%;
+}
+footer{
+    background-color: #A2B964;
+}
