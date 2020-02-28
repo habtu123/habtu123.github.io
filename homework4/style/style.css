@@ -4,6 +4,7 @@ form label{
 input[type="submit"]{
     background-color:	#FFA2A5;
     font-weight: bold;
+    font-size: 18pt;
 }
 fieldset{
     background-color: #E0E1FF;    
@@ -15,6 +16,7 @@ fieldset{
 fieldset legend{
     border: solid 2px gray;
     background-color: white;
+    padding: 5px;
 }
 a{
     color: red;
