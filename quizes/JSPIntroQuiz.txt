@@ -1,0 +1,74 @@
+1. What is the main value of Java Server Pages?
+	 JSP technology is used to create web application just like Servlet technology. 
+	 It can be thought of as an extension to Servlet because it provides more
+	 functionality than servlet such as expression language, JSTL, etc. 
+	 A JSP page consists of HTML tags and JSP tags. The JSP pages are easier 
+	 to maintain than Servlet because we can separate designing and development.
+	 It provides some additional features such as Expression Language, Custom Tags, etc.
+2.How are JSP pages related to servlets?
+	JSP technology is used to create web application just like Servlet technology. 
+	It can be thought of as an extension to Servlet because it provides more functionality
+	 than servlet such as expression language, JSTL, etc.
+3.How are JSP pages related to HTML?
+	• A JSP page consists of HTML tags and JSP tags while HTML can only have html tags.
+	• A JSP page can generate & contain dynamic information while regular HTML cannot.
+4. Give an example of a JSP scriptlet and show how it will look in the JSP servlet.
+	                 <html>
+
+                    <body>
+                        <% out.print("Hello Workld"); %>
+                    </body>
+
+                    </html>
+                
+5. Give an example of a JSP declaration and show how it will look in the JSP servlet. Ans:- The JSP declaration tag is used to declare fields and methods.The code written inside the jsp declaration tag is placed outside the service() method of auto generated servlet. So it doesn't get memory at each request. The syntax of the declaration tag is as follows: <%! Field or method declaration %> Example:
+
+                    <html>
+
+                    <body>
+                        <%! int i=50; %>
+                    </body>
+
+                    </html>
+                
+
+                    <html>
+
+                    <body>
+                        <%=”test data :”+i%>
+                    </body>
+
+                    </html>
+                
+6. Give an example of a JSP comment and show how it will look in the JSP servlet.
+Ans:- In order to generate comments that appear in the response output stream to the requesting client, the HTML and XML comment syntax is used, as follows:
+
+These comments are treated as uninterpreted template text by the JSP container. If the generated comment is to have dynamic data, this can be obtained through an expression syntax, as in:
+
+8. Give an example of a JSP expression and show how it will look in the JSP servlet.
+Ans:- Syntax of JSP expression: <% =statement%>
+Example:-
+welcome message
+
+                    <html>
+
+                    <body>
+                        <%= "welcome to jsp" %>
+                    </body>
+
+                    </html>
+                
+9. Give an example of a JSP directive and show how it will look in the JSP servlet. Ans:- Syntax of JSP directive <%@ directive attribute="value" %> Example:-
+
+                    <html>
+
+                    <body>
+                        <%@ page contentType=application/msword %>
+                        Today is: <%= new java.util.Date() %>
+                    </body>
+
+                    </html>
+                
+10. Explain how an EL expression is evaluated.
+Ans:- The Expression Language (EL) simplifies the accessibility of data stored in the Java Bean component, and other objects like request, session, application etc. There are many implicit objects, operators and reserve words in EL. Syntax of EL :- $ {expression}11. Explain how servlets and JSPs use request dispatch to interact.
+Ans:- The RequestDispatcher interface provides the facility of dispatching the request to another resource it may be html, servlet or jsp. This interface can also be used to include the content of another resource also. It is one of the way of servlet collaboration.

@@ -11,7 +11,7 @@ header img{
 }
 footer{
     background-color: lightgray;
-     bottom: 0px; position: fixed;
+     bottom: 0px; position: relative;
      width: 100%
 }
 section li{

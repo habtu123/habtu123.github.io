@@ -1,0 +1,32 @@
+1. What is the difference between a web server and a web container?
+	Web server is a peace of hardware and software that hosts web application and is capble of handling
+	HTTP request. It servers static contect to the coming request. 
+	On the other hand web container manages application specific componantes such as servlets and JSPs. They are 
+	used to provice dynamic content. 
+2. What is a servlet?
+	A servlet is a Java class that extends the capabilities of servers that host applications
+	access by means of a request-response programming model. 
+3. How do web servers and web containers interact with servlets?
+	The web server recives HTTP requests. If the incoming HTTP request is to a servlet, 
+	it sends it to the web container. The web container locates the servlet, creates request and response
+	objects and calls the servlet. After that it sends back the response data to the web servler which will be 
+	sent back to the caller. 
+4. Who creates request objects?
+	the web container creates request objects
+5. What are the states in the servlet lifecycle?
+	. Load - finding and loading the java class by using (Class c = Class.forname(...)
+	. Create - When the servlet is inistentiated (c.newInstance()) 
+	. Init - when the init() methed is called. The init() method is called only once int the servlert lifecycle
+	. Service - this is called for every request to the servlet with in a thread 
+	. Destroy - called to prepare the object for garbage collection. It is called only once when the server shuts down usually. 
+6. Who calls init and when?
+	The web container calls 
+7. Which of init, service, and doGet should you override?
+	You have to override the doGet method. And the doPost method as well if the application recives HTTP POST calls. 
+	It is not mandatory to override init and service method unless there is a custom need for it since they are alredy 
+	implicationed the in the parent class. 
+8. In what sense are servlets multi-threaded?
+	Multiple users can access the same servlet without the need for waiting the other calls to get finished. 
+	That is because the container runs every request in a a single thread. If multiple calls come to a single servlet, 
+	the servlet container will create multiple threads. So every call to a servlet runs in a thread, which makes 
+	the servlets multi-threaded.
