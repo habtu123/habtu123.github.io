@@ -50,11 +50,24 @@ function igpayAninlay(){
     var textArray = []; 
      textArray = text.split(" ");
 
+     var updateText = []
+
      for(word in textArray){
-         console.log(textArray[word])
+         let w = textArray[word]; 
+         if(w.charAt(0).match(/^[aeiou]/gm)){
+            let sub = w.substring(1,w.length); 
+            let newW = sub + w.charAt(0) + "-ay"; 
+
+            updateText.push(newW); 
+         }
+         else{
+            updateText.push(textArray[word] + "-ay")
+         }
      }
 
-    console.log(textArray)
+    console.log(updateText)
+
+    document.getElementById("my-text").value = updateText.join(" ")
 }
 
 function malkovitch(){
