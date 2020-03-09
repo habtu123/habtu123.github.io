@@ -55,13 +55,12 @@ function igpayAninlay(){
      for(word in textArray){
          let w = textArray[word]; 
          if(w.charAt(0).match(/^[aeiou]/gm)){
+            updateText.push(textArray[word] + "-ay")
+         }
+         else{            
             let sub = w.substring(1,w.length); 
             let newW = sub + w.charAt(0) + "-ay"; 
-
             updateText.push(newW); 
-         }
-         else{
-            updateText.push(textArray[word] + "-ay")
          }
      }
 
