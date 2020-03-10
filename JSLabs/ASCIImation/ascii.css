@@ -1,0 +1,31 @@
+*{
+    margin: auto;
+    font-family: sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+
+}
+
+body{
+    margin-top: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #CCCCFF;
+}
+.wrapper-dev{
+    text-align: center;
+    font-size: 32pt;
+}
+fieldset{
+    display: inline;
+    border: 5px solid black;
+}
+.text{
+    width: 90%;
+    height: 400px;
+    font-size: 12pt;
+    font-family: monospace;
+    font-weight: bold;
+
+
+}
