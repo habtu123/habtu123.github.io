@@ -1,29 +1,32 @@
 window.onload = function(){
-    document.getElementById("create").onclick = this.createAccount
-}
-var account = {
-    name:"", 
-    balance : ""
+    document.getElementById("create").onclick = account.createAccount
 }
 
-var accountInfoList=[]
-function createAccount(){
-    var accName = document.getElementById("accountName").value;
-    var accBalance = document.getElementById("accountNumber").value; 
-    var acc =  {name:accName, balance:accBalance}; 
-    var acc = Object.create(acc)
+var accountInfoList=[]; 
+var account = (function (){
 
-    accountInfoList.push(acc); 
+    createAccount =  function (){
+        console.log("create account")
+        var accName = document.getElementById("accountName").value;
+        var accBalance = document.getElementById("accountNumber").value; 
+        var acc =  {name:accName, balance:accBalance}; 
+        accountInfoList.push(acc); 
 
-    diplayChange()
+    return diplayChange()
+    }; 
+
+    diplayChange =  function(){
+        console.log(accountInfoList)
+        var report = []
+        for(account in accountInfoList){
+            report.push("Account Name: "+accountInfoList[account].name +" Account Balance: "+accountInfoList[account].balance)
+        }
+
+        document.getElementById("accounts").value = report.join("\n")
+    }; 
+
+return {
+    createAccount
 }
+})(); 
 
-function diplayChange(){
-    console.log(accountInfoList)
-    var report = []
-    for(account in accountInfoList){
-        report.push("Account Name: "+accountInfoList[account].name +" Account Balance: "+accountInfoList[account].balance)
-    }
-
-    document.getElementById("accounts").value = report.join("\n")
-}
