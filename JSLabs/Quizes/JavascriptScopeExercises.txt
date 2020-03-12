@@ -1,0 +1,86 @@
+1. Determine what this Javascript code will print out (without running it):
+	x = 1;
+	var a = 5;
+	var b = 10;
+	var c = function(a, b, c) {
+	var x = 10;
+	document.write(x);
+	document.write(a);
+	var f = function(a, b, c) {
+	b = a;
+	document.write(b);
+	b = c;
+	var x = 5;
+	}
+	f(a,b,c);
+	document.write(b);
+	 }
+	c(8,9,10);
+	document.write(b);
+	document.write(x);
+}
+10
+8
+8
+10
+10
+1
+
+2. What is the difference between a method and function?
+	function is a object which has a either a global scope or a function scope 
+	depending on its enclosing object. 
+	while is a methed is a function that is attached as a value for a javascript object 
+3. What does 'this' refer to when used in a Java method?
+	it refers to the class
+4. What does 'this' refer to when used in a JavaScript method?
+	it refers to the nearest eclosing object 
+5. What does 'this' refer to when used in a JavaScript constructor function?
+
+6. Assume object x is the prototype for object y in Javascript. Object x has a method f( ) containing keyword 'this'.
+When f is called by x.f( ), what does 'this' refer to?
+- to object x
+7. What is a free variable in JavaScript?
+ it is a variable that is nither passed as paramenter or decleared in the the inner function
+ 
+8. Create an object that has properties with name = "fred" and major="music" and a property that is a function
+that takes 2 numbers and returns the smallest of the two, or the square of the two if they are equal.
+
+	var obj = {
+		name: "fred", 
+		major:"music", 
+		smallest: function(a,b){
+			if(a!=b)
+				return a:a<b? b				
+			return a * b;
+		}
+	}
+9. Write Javascript code for creating three Employee objects using the "new" keyword and a constructor function.
+Employee objects have the following fields: name, salary, position.
+	function Employee(name, salary, position){
+		this.name = name; 
+		this.salary = salary; 
+		this.position = position
+	}
+	
+	var emp = new Employee("Frist", "10000", "Software developer"); 
+
+10. Write a Javascript function that takes any number of input arguments and returns the product of the
+arguments.
+
+	function product(){
+	let prod = 1; 
+	for(let i =0 ; i<arguments.length; i++){
+  		prod *=arguments[i]; 
+  }
+  return prod
+}
+
+11. Write an arrow function that returns the maximum of its three input arguments.
+
+var max = (a,b,c) => {
+	if(a>b)
+		return a?a>c:c
+	else
+		return b?b>c:c
+
+}
