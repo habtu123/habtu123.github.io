@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js" type="text/javascript"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("li button").click(function(){ // find all buttons under li and add an action listener 
+                $(this).parent().remove() // remove the buttons and their parent
+            })
+        })
+    </script>
+</head>
+<body>
+    <div>My To Do List</div>
+        <ol>
+            <li>Learn jQuery <button >remove</button></li>
+            <li>Ask the Boss for a raise <button >remove</button></li>
+            <li>Tweet about my raise <button >remove</button></li>
+        </ol>
+</body>
+</html>

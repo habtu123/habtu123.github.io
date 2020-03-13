@@ -1,0 +1,10 @@
+#Java Module Excercise
+
+1. Determine what this Javascript code will print out (without running it):
+         1
+         8
+         8 // b is now 10
+         10
+         10
+         1
+2. 
