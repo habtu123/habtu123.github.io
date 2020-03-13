@@ -30,6 +30,14 @@
 	function is a object which has a either a global scope or a function scope 
 	depending on its enclosing object. 
 	while is a methed is a function that is attached as a value for a javascript object 
+	for example
+        function f(){
+
+        } // f is a function 
+
+        var a = {
+            b: function(){}
+        } // the function that we access using a.b is a method
 3. What does 'this' refer to when used in a Java method?
 	it refers to the class
 4. What does 'this' refer to when used in a JavaScript method?

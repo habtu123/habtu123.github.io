@@ -1,0 +1,7 @@
+1. In jQuery terminology, what is the difference between the “jQuery function” and the “jQuery object”? 
+ Ans: The jQuery function writting in jQuery() or $() is a function whose responsiblity is grabing the DOM elemenets
+      passed to it in parenthases. 
+      jQuery objects are objects graped or selected by the jQuery function 
+        $("div") returns all div as a jQuery objects
+2. $("div h1").css("background-colr", "red");
+3. $("p").append("yes");

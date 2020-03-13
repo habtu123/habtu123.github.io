@@ -7,4 +7,18 @@
          10
          10
          1
-2. 
+2. What is the difference between a method and function?
+    a function is a an independent object in JavaScript while a method is a function that is a value 
+    to a key in a JavaScript object
+    for example
+        function f(){
+
+        } // f is a function 
+
+        var a = {
+            b: function(){}
+        } // the function that we access using a.b is a method
+        
+3. What does 'this' refer to when used in a Java method?
+4. What does 'this' refer to when used in a JavaScript method?
+5. What does 'this' refer to when used in a JavaScript constructor function?
